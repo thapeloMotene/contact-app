@@ -1,10 +1,4 @@
-<mat-list>
-    <mat-list-item *ngFor="let contact of contactList">
-      <h3 matLine> {{contact.name}} {{contact.surname}}</h3>
-      <p matLine>
-        <span> {{contact.relationship}}</span>
-        <span class="demo-2">{{contact.number}}</span>
-      </p>
-    </mat-list-item>
-    <mat-list-item *ngIf="!contactList" id="empty-state">Contact list is empty! Start Creating Contacts.</mat-list-item>
-  </mat-list>
+<div class="phonelist">
+        <app-contact-item  *ngFor="let contact of contactList" [contact]="contact"></app-contact-item>
+        <p id="empty-state" *ngIf="!contactList">no contacts to display!</p>
+</div>

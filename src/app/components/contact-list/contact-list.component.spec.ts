@@ -28,18 +28,16 @@ describe('ContactListComponent', () => {
     const fixture = TestBed.createComponent(ContactListComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('#empty-state').textContent).toContain('Contact list is empty! Start Creating Contacts.');
+    expect(compiled.querySelector('#empty-state').textContent).toContain('no contacts to display!');
   });
 
 
   it('should render list item', () => {
     const fixture = TestBed.createComponent(ContactListComponent);
-    fixture.componentInstance.contactList =[{id:1, name:'Thapelo', surname:'Motene',relationship:'Me', phone:'0762906973'},];
+    fixture.componentInstance.contactList =[{id:1, name:'Thapelo', surname:'Motene',relationship:'Me', phone:'0762906973'}];
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('h3').textContent).toContain('Thapelo');
+    expect(compiled.querySelector('app-contact-item')).toBeTruthy();
   });
-
-
 
 });

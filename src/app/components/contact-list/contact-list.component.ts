@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactListComponent implements OnInit {
 
-  @Input('contacts') contactList: any[];
+  @Input('contacts') contactList: any[]; 
 
   constructor() { }
 
