@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api'; 
 
@@ -34,7 +35,7 @@ import { HomeComponent } from './screens/home/home.component';
     MatListModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule,
+    FlexLayoutModule,
     InMemoryWebApiModule.forRoot(DataStoreService)
   ],
   providers: [ApiHttpService],

@@ -1,4 +1,10 @@
-<div class="phonelist">
+<!-- <div class="phonelist">
+        <app-contact-item  *ngFor="let contact of contactList" [contact]="contact"></app-contact-item>
+        <p id="empty-state" *ngIf="!contactList">no contacts to display!</p>
+</div> -->
+
+
+<div fxLayout="row" fxLayoutAlign="space-between" class="phonelist">
         <app-contact-item  *ngFor="let contact of contactList" [contact]="contact"></app-contact-item>
         <p id="empty-state" *ngIf="!contactList">no contacts to display!</p>
 </div>

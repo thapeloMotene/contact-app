@@ -94,4 +94,6 @@ button {
 
 .contact-card{
     margin: 20px;
+      display: block;
+      min-width: 400px;
 }
