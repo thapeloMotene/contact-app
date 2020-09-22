@@ -4,17 +4,17 @@ import { Observable } from "rxjs";
 @Injectable({
   providedIn: 'root'
 })
-export class ApiHttpServiceService {
+export class ApiHttpService {
   public static readonly BASE_URL = 'api';
 
 
   constructor(private _http: HttpClient) { }
 
   private buildRequestUrl(path: string): string {
-    return ApiHttpServiceService.BASE_URL+'/' + path;
+    return ApiHttpService.BASE_URL+'/' + path;
     }
 
-  public getContacts(){
+  public  getContacts(){
       return this._http.get(this.buildRequestUrl('contacts'));
   }
 
