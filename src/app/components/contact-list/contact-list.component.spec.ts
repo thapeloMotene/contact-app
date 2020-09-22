@@ -20,6 +20,10 @@ describe('ContactListComponent', () => {
     fixture.detectChanges();
   });
 
+  afterEach(() => {
+    fixture.destroy();
+  });
+
   it('should render without breaking', () => {
     expect(component).toBeTruthy();
   });
