@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 
@@ -35,6 +37,8 @@ import { HomeComponent } from './screens/home/home.component';
     MatListModule,
     MatCardModule,
     MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
     FlexLayoutModule,
     InMemoryWebApiModule.forRoot(DataStoreService)
   ],
