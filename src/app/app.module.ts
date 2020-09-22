@@ -12,6 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatButtonModule} from '@angular/material/button';
 
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api'; 
@@ -38,6 +39,7 @@ import { HomeComponent } from './screens/home/home.component';
     MatCardModule,
     MatToolbarModule,
     MatFormFieldModule,
+    MatButtonModule,
     MatInputModule,
     FlexLayoutModule,
     InMemoryWebApiModule.forRoot(DataStoreService)
