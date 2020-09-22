@@ -1,19 +1,17 @@
 <div>
-    <div class="home-jumbotron">
-
-    </div>
+    <div class="home-jumbotron"></div>
 
     <div>
         <div>
-            <form  fxLayout="row" fxLayoutAlign="center" >
+            <form  fxLayout="row" fxLayoutAlign="center">
                 <mat-form-field class="find-form-full-width">
                   <mat-label>Find Contact</mat-label>
-                  <input matInput placeholder="E.g. John Smith" >
+                  <input matInput placeholder="E.g. John Smith"  (keyup)="onKeyUp($event)" >
                 </mat-form-field>
               </form>
         </div>
     </div>
-    <app-contact-list [contacts]="contacts"></app-contact-list>
+    <app-contact-list [contacts]="filteredContacts"></app-contact-list>
 </div>
 
 
